@@ -1,0 +1,33 @@
+<div id="boody" class="body">
+  <div class="container">
+      <div class="card">
+        <h1>Update Teacher</h1>
+          <div class="card-body">
+          <div class="form-group">
+              <label for="">Teacher Name :<span>{{errors}} </span></label>
+              <input class="form-control"
+              type="text" [(ngModel)]="object.name" #TeacherName="ngModel" required  placeholder="Teacher Name">
+
+          </div>
+
+          <div class="form-group">
+              <label for="">Teacher course :<span>{{errors}} </span></label>
+              <input class="form-control"
+              type="text" [(ngModel)]="object.course"  #Teachercourse="ngModel" requird  placeholder="Teacher course">
+          </div>
+
+          <div class="form-group">
+              <label for="">Teacher age :<span>{{errors}} </span></label>
+              <input class="form-control"
+              type="text" [(ngModel)]="object.age"  #Teacherage="ngModel" requird  placeholder="Teacher course">
+          </div>
+          <div >
+
+              <button (click)="update()" class="btn btn-info">Send Data</button>
+
+          </div>
+          </div>
+      </div>
+  </div>
+
+</div>

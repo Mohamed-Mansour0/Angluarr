@@ -1,0 +1,38 @@
+<div id="boody" class="body">
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <table class="table lisst">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>level</th>
+                        <th>Age</th>
+
+                        <th>Action</th>
+
+
+
+                    </tr>
+                    <tr *ngFor="let item of allData">
+                        <th>{{item.id}}</th>
+                        <th>{{item.name}}</th>
+                        <th>{{item.level}}</th>
+                        <th>{{item.age}}</th>
+                      <th>   <button (click)="remove(item.id)" class="btn btn-danger">Delete</button> </th>
+                      <th>
+                        <a routerLink="/us/{{item.id}} "class="btn btn-primary">Edit</a>
+
+                      </th>
+
+
+                    </tr>
+
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>

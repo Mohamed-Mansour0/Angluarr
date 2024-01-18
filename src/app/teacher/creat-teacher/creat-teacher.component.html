@@ -1,0 +1,32 @@
+<div id="boody" class="body">
+  <div class="container">
+      <div class="card">
+          <div class="card-body">
+          <div class="form-group">
+              <label for="">Teacher Name :<span>{{errors}} </span></label>
+              <input class="form-control"
+              type="text" [(ngModel)]="object.name" #teacherName="ngModel" required  placeholder="Teacher Name">
+
+          </div>
+
+          <div class="form-group">
+              <label for="">Teacher Course :<span>{{errors}} </span></label>
+              <input class="form-control"
+              type="text" [(ngModel)]="object.course"  #teacherCourse="ngModel" requird  placeholder="Teacher Course">
+          </div>
+
+          <div class="form-group">
+              <label for="">Teacher age :<span>{{errors}} </span></label>
+              <input class="form-control"
+              type="text" [(ngModel)]="object.age"  #teacherage="ngModel" requird  placeholder="Teacher level">
+          </div>
+          <div >
+
+              <button (click)="save(teacherName,teacherCourse,teacherage)" class="btn btn-info">Send Data</button>
+
+          </div>
+          </div>
+      </div>
+  </div>
+
+</div>
